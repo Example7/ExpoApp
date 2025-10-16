@@ -19,16 +19,16 @@ export default function App() {
         ...MD3DarkTheme,
         colors: {
           ...MD3DarkTheme.colors,
-          primary: "#2196f3",
-          secondary: "#ff9800",
+          primary: "#4caf50",
+          secondary: "#ffeb3b",
         },
       }
     : {
         ...DefaultTheme,
         colors: {
           ...DefaultTheme.colors,
-          primary: "#ff9800",
-          secondary: "#2196f3",
+          primary: "#ffeb3b",
+          secondary: "#4caf50",
         },
       };
 
