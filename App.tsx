@@ -15,6 +15,7 @@ export default function App() {
   const [isDark, setIsDark] = React.useState(false);
 
   const x = 1;
+  console.log(x);
 
   const theme = isDark
     ? {
