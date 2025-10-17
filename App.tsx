@@ -14,6 +14,8 @@ export default function App() {
 
   const [isDark, setIsDark] = React.useState(false);
 
+  constd x = 1;
+
   const theme = isDark
     ? {
         ...MD3DarkTheme,
