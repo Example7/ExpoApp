@@ -15,7 +15,6 @@ import {
 } from "react-native-paper";
 import { useCounterStore } from "../store/useCounterStore";
 import { supabase } from "../lib/supabase";
-import { formatDiagnostic } from "typescript";
 
 export default function App() {
   const { count, increase, decrease, reset } = useCounterStore();
@@ -89,14 +88,6 @@ export default function App() {
       fetchProducts();
       setEditVisible(false);
     }
-  };
-
-  const handleEdit = async () => {
-    if (!editId) return;
-    const { error } = await supabase
-      .from("products")
-      .update({ name: editName, price: editPrice })
-      .eq("id", editId);
   };
 
   const theme = isDark
